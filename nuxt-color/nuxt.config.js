@@ -31,6 +31,8 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxt/postcss8',
+    '@nuxtjs/composition-api/module',
+    '@pinia/nuxt',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -38,7 +40,6 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxt/content',
-    '@pinia/nuxt',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

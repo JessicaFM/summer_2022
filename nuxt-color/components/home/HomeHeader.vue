@@ -34,10 +34,16 @@
                 <BigBox :colorArray="palette[4]" :colorType="colorType" />
             </div>
         </div>
+        <div>
+            <client-only>
+            </client-only>
+        </div>
     </div>
 </template>
 
 <script>
+import { mapState } from 'pinia'
+import { useTypeStore } from '~/store/myStore'
 import BigBox from '../boxes/BigBox.vue';
 
 export default {
@@ -49,6 +55,9 @@ export default {
             loading: true,
             colorType: 'rgba' //default
         }  
+    },
+    computed: {
+        ...mapState(useTypeStore, ['count'])
     },
     methods: {
         onChangeType: function(event){

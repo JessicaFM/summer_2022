@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import { useStore } from '~/store/myStore'
 
 export default {
     name: 'BigBox',
@@ -56,11 +55,6 @@ export default {
             var self = this;
             setTimeout(function() { self.copied = false }, 3000);
         }
-    },
-    asyncData({ $pinia }) {
-        const store = useStore($pinia)
-        console.log(store)
-        console.log(store)
     },
 }
 </script>
