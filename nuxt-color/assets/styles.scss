@@ -39,8 +39,27 @@ body {
     flex: 1;
     padding: 5px 10px;
 }
+.custom-wrapper {
+    flex: 1;     
+}
 .column-wrapper {
     padding: 5px 10px;
+}
+.big-box-default {
+    padding: 5px 10px;
+}
+.big-box-cloned {
+    width: 100%;
+    min-height: 100px;
+    min-width: 100px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+input::-webkit-color-swatch {
+    border: none;
 }
 .bigbox {
     min-height: 100px;

@@ -11,3 +11,9 @@
         components: { ColorPicker }
     }
 </script>
+
+<style scope>
+    .container.wrapper {
+        margin: 0 auto;
+    }
+</style>

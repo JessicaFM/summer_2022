@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper grid-cols-2"
+    <div class="wrapper grid-cols-3"
         @click="saveColor">
         <div class="bigbox" :style="style">
             <transition name="fade">
@@ -27,6 +27,7 @@ export default {
     computed: {
         color: function() {
             let colorTemp = ""
+            console.log(this.colorArray);
             if(this.colorType && this.colorType=='rgba') {
                 let first = (this.colorArray?this.colorArray[0]:"00")
                 let second = (this.colorArray?this.colorArray[1]:"00")
